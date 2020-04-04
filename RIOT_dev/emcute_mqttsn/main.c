@@ -282,11 +282,7 @@ sprintf(frase, "temperature: %d",temperature); */
         uint32_t wind_i = random_uint32_range(WIND_I_MIN, WIND_I_MAX);
         uint32_t wind_d = random_uint32_range(WIND_D_MIN, WIND_D_MAX);
         uint32_t rain_h = random_uint32_range(RAIN_H_MIN, RAIN_H_MAX);
-        //Get the current time and print it into the string date_time
-           char date_time[30];
-           time_t t1 = time(NULL);
-           struct tm tm = *localtime(&t1);
-           sprintf(date_time,"%d-%02d-%02d %02d:%02d:%02d\n", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
+        
 
 char frase[200];
         sprintf(frase, "temperature: %u, humidity : %u, wind_direction: %u, wind_intensity: %u, rain_height: %u",
