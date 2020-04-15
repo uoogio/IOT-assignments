@@ -1,5 +1,5 @@
 # RIOT01
-## Youtube link: https://youtu.be/rETmHxrt5aM
+## Youtube link: 
 
 
-## Blog Post : https://www.linkedin.com/pulse/set-up-iot-system-microsoft-azure-riot-python-giovanni-buono/
+## Blog Post :
