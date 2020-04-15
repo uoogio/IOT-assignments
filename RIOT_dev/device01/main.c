@@ -452,9 +452,8 @@ static int _cmd_loramac(int argc, char **argv)
 
         semtech_loramac_set_tx_mode(&loramac, cnf);
         semtech_loramac_set_tx_port(&loramac, port);
-        char frase[200];
-                sprintf(frase, "temperature: %d, humidity : %d, wind_direction: %d, wind_intensity: %d, rain_height: %d",
-                         temp,hum,wind_i,wind_d,rain_h);
+        char frase[40];
+              sprintf(frase, "%d,%d,%d,%d,%d", temp,hum,wind_i,wind_d,rain_h);
       //  uint8_t dataArray[strlen(frase)];
       //  frase.toCharArray(dataArray, strlen(frase));
         switch (semtech_loramac_send(&loramac,
