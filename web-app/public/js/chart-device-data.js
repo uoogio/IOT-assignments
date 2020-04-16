@@ -147,7 +147,7 @@ $(document).ready(() => {
         position: 'right',
       },
       {
-        id: 'wind_direction',
+        id: 'WindDirection',
         type: 'linear',
         scaleLabel: {
           labelString: ' Angles',
@@ -156,7 +156,7 @@ $(document).ready(() => {
         position: 'right',
       },
       {
-        id: 'wind_intensity',
+        id: 'WindIntensity',
         type: 'linear',
         scaleLabel: {
           labelString: 'speed ',
@@ -165,7 +165,7 @@ $(document).ready(() => {
         position: 'right',
       },
       {
-        id: 'rain_height',
+        id: 'Rain',
         type: 'linear',
         scaleLabel: {
           labelString: 'height mm',

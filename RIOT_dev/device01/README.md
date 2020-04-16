@@ -222,3 +222,10 @@ loramac set appeui 70B3D57ED002D522
 loramac set appkey D077F98AEF82253C9A0D08D98138F86D
 loramac set dr 5
 loramac join otaa
+
+
+loramac set deveui 00A4AA0BCAEF3B57
+loramac set appeui 70B3D57ED002D522
+loramac set appkey 6165E66579D46DF16568ADB3D742A83B
+loramac set dr 5
+loramac join otaa
