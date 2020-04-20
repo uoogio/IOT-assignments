@@ -53,16 +53,17 @@ def ttn_on_connect(client, userdata, flags, rc):
 
 def ttn_on_message(client, userdata, msg):
 
-    payl = json.loads(msg.payload)
+    payl = json.loads(msg.payload.decode('utf-8'))
 
     newpayl= base64.b64decode(payl["payload_raw"])
 
-    newpayl= {'temperature': int(newpayl[0])-50,'humidity':newpayl[1],'wind_direction': newpayl[2], 'wind_intensity':newpayl[3],'rain_height':newpayl[4]}
-    print(newpayl)
+
+    msg= {'temperature': newpayl[0],'humidity': newpayl[1],'wind_direction': newpayl[2], 'wind_intensity': newpayl[3],'rain_height': newpayl[4]}
+    print(msg)
 
 
 
-    message = json.dumps(newpayl)
+    message = json.dumps(msg)
 
     client1.send_message(message)
 
