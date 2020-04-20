@@ -1,5 +1,12 @@
-# RIOT01
-## Youtube link: 
+# Wether system using LoRa, Microsoft Azure and MQTT.
+
+## Youtube link firts assignment: https://www.youtube.com/watch?v=CrSP4J8Ng-Q&t=50s
 
 
-## Blog Post :
+## Youtube link second assignment: https://www.youtube.com/watch?v=rETmHxrt5aM
+
+
+## Youtube link 3 Assignment: https://youtu.be/r4aFayWMUro
+
+
+## Blog Post 3 Assignment : https://www.linkedin.com/pulse/wether-system-using-lora-microsoft-azure-mqtt-giovanni-buono
