@@ -3,41 +3,19 @@ var mqtt = require('mqtt');
 var cors = require('cors');
 var fs = require('fs');
 var http = require('http');
-//var https = require('https');
-//var privateKey  = fs.readFileSync('cert/192.168.1.63.key', 'utf8');
-//var certificate = fs.readFileSync('cert/192.168.1.63.crt', 'utf8');
 
-//var credentials = {key: privateKey, cert: certificate};
 
 
 var app = express();
 
-// Create a client instance
-//var client = mqtt.connect('mqtt://127.0.0.1:8883')
 
-/*client.on('connect',  () => {
-    console.log("Connected");
-
-    client.subscribe(`sensor/+/activity`, (err) => {
-      if (!err) {
-        console.log("Subscribed to: sensor/+/activity")
-      }
-    })
-  }); */
 var clientsActivity = new Map();
 
 var clientFromConnectionString = require('azure-iot-device-mqtt').clientFromConnectionString;
 var Message = require('azure-iot-device').Message;
 var connectionString = 'HostName=assignment4.azure-devices.net;DeviceId=MyNodeDevice;SharedAccessKey=axkIDEbJ+9SXl85TsQTpBhFbqDLDXMjw/45e6+e51Yg=';
 var client = clientFromConnectionString(connectionString);
-/*client.on('message', function (topic, message) {
-    // message is Buffer
-    let clientId = topic.split("/")[1];
-    message = JSON.parse(message.toString());
-    clientsActivity.set(clientId, message.activity.toString());
-    console.log(message.toString());
-  }); */
-// connect the client
+
 
 var connectCallback = function (err) {
     if (err) {
