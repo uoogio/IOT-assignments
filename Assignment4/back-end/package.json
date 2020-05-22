@@ -1,0 +1,17 @@
+{
+  "name": "forwarder",
+  "version": "0.0.1",
+  "description": "simple api to forward messages at iot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nicoDs",
+  "license": "ISC",
+  "dependencies": {
+    "azure-iot-device-mqtt": "^1.14.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mqtt": "^4.0.1"
+  }
+}
