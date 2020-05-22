@@ -63,6 +63,20 @@ app.get('/state/:clientId', function (req, res) {
     }
     
 });
+app.post('/state/:clientId', function(req,res){
+    let Id= req.params.clientId;
+    try{
+      console.log(req.body)
+      res.type('application/json');
+      res.status(200);
+      res.send({});
+
+    }catch(e){
+      console.error("Error : " + e);
+      res.status(500).send("500 - Internal Error");
+
+    }
+});
 
 
 app.post('/readings', function (req, res) {
