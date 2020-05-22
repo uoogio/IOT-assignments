@@ -13,7 +13,7 @@ var clientsActivity = new Map();
 
 var clientFromConnectionString = require('azure-iot-device-mqtt').clientFromConnectionString;
 var Message = require('azure-iot-device').Message;
-var connectionString = 'HostName=assignment4.azure-devices.net;DeviceId=MyNodeDevice;SharedAccessKey=axkIDEbJ+9SXl85TsQTpBhFbqDLDXMjw/45e6+e51Yg=';
+var connectionString = '';
 var client = clientFromConnectionString(connectionString);
 
 
