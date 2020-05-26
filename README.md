@@ -16,4 +16,4 @@
 ## Youtube link 4 Assignment: https://www.youtube.com/watch?v=uzfUFBgLUzM
 
 
-## Blog Post 3 Assignment : https://www.linkedin.com/pulse/movement-recognition-through-web-sensor-giovanni-buono
+## Blog Post 4 Assignment : https://www.linkedin.com/pulse/movement-recognition-through-web-sensor-giovanni-buono
